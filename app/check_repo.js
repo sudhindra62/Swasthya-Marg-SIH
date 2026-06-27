@@ -1,0 +1,1 @@
+fetch('https://api.github.com/repos/NikhilGoral28/SwasthPath/git/trees/main?recursive=1').then(r=>r.json()).then(data => console.log(JSON.stringify(data.tree.map(t=>t.path).filter(p => p.startsWith('lib/')), null, 2)));

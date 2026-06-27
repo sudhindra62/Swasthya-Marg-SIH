@@ -1,0 +1,1 @@
+fetch('https://api.github.com/repos/NikhilGoral28/SwasthPath/git/trees/main?recursive=1').then(r=>r.json()).then(d => d.tree.filter(f => f.path.startsWith('lib/screens')).forEach(f => console.log(f.path)));
